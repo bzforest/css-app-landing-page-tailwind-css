@@ -19,7 +19,10 @@
               'kodchasan': ['Kodchasan', 'sans-serif'],
               'montserrat': ['Montserrat', 'sans-serif'],
               'stack-sans-headline': ['Stack Sans Headline', 'sans-serif'],
-            }
+            },
+            colors:{
+              'font-main-color': '#1A1A2C'
+            },
           }
         }
       }
@@ -27,8 +30,38 @@
   </head>
   <body class="font-inter">
 
-    <section class="dev1">
+    <section class="dev1 flex flex-col items-center">
       <!-- dev 1 start here -->
+      <nav class="flex justify-between items-center bg-white w-[95%] h-[4.8rem] mx-auto rounded-full mt-4 shadow-[0_0_15px_0_rgba(0,0,0,0.1)]">
+        <div class="flex items-center justify-between w-full px-8 py-4">
+          <div class="text-3xl font-extrabold p-14 relative">Acme
+            <div class="absolute bottom-[78px] right-[49px] w-2 h-2 bg-[#5E44FF] rounded-full "></div>
+          </div>
+          <ul class="flex flex gap-14 p-20 ">
+            <li class="hover:underline hover:text-[#563AFF]"><a href="#home">Home</a></li>
+            <li class="hover:underline hover:text-[#563AFF]"><a href="#features">Features</a></li>
+            <li class="hover:underline hover:text-[#563AFF]"><a href="#pricing">Pricing</a></li>
+            <li class="hover:underline hover:text-[#563AFF]"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="flex items-center justify-center  w-[95%] p-[120px]">
+        <div class="flex flex-col justify-items-start text-center ">
+          <p class="bg-[#563AFF]/10 rounded-full px-6 py-2 w-[fit-content] self-center text-[#5E44FF] font-medium">
+            🌈Acme Productivity App
+          </p>
+          <h1 class="text-[4rem] font-extrabold pt-6 text-font-main-color">
+            Boost Your <span class="text-[#5E44FF]">Product</span>ivity
+          </h1>
+          <h3 class="text-[1.2rem] font-medium text-font-main-color">
+            Streamline your workflow with our all-in-one productivity app.
+          </h3>
+          <button class="bg-font-main-color text-white rounded-2xl px-10 py-4 w-[fit-content] self-center mt-8">
+            Start Free Trial
+          </button>
+        </div>
+      </section>
     </section>
 
     <section class="dev2">
