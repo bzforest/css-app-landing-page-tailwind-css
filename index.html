@@ -19,24 +19,140 @@
               'kodchasan': ['Kodchasan', 'sans-serif'],
               'montserrat': ['Montserrat', 'sans-serif'],
               'stack-sans-headline': ['Stack Sans Headline', 'sans-serif'],
-            }
+            },
+            colors:{
+              'font-main-color': '#1A1A2C'
+            },
           }
         }
       }
     </script>
   </head>
-  <body class="font-inter">
+  <body class="font-inter bg-[#E0E0ED]">
 
-    <section class="dev1">
+    <section class="dev1 flex flex-col items-center">
       <!-- dev 1 start here -->
+      <nav class="flex justify-between items-center bg-white w-[95%] h-[4.8rem] mx-auto rounded-full mt-4 shadow-[0_0_15px_0_rgba(0,0,0,0.1)]">
+        <div class="flex items-center justify-between w-full px-8 py-4">
+          <div class="text-3xl font-extrabold p-14 relative">Acme
+            <div class="absolute bottom-[78px] right-[49px] w-2 h-2 bg-[#5E44FF] rounded-full "></div>
+          </div>
+          <ul class="flex flex gap-14 p-20 ">
+            <li class="hover:underline hover:text-[#563AFF]"><a href="#home">Home</a></li>
+            <li class="hover:underline hover:text-[#563AFF]"><a href="#features">Features</a></li>
+            <li class="hover:underline hover:text-[#563AFF]"><a href="#pricing">Pricing</a></li>
+            <li class="hover:underline hover:text-[#563AFF]"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="flex items-center justify-center  w-[95%] p-[120px]">
+        <div class="flex flex-col justify-items-start text-center ">
+          <p class="bg-[#563AFF]/10 rounded-full px-6 py-2 w-[fit-content] self-center text-[#5E44FF] font-medium">
+            🌈Acme Productivity App
+          </p>
+          <h1 class="text-[4rem] font-extrabold pt-6 text-font-main-color">
+            Boost Your <span class="text-[#5E44FF]">Product</span>ivity
+          </h1>
+          <h3 class="text-[1.2rem] font-medium text-font-main-color">
+            Streamline your workflow with our all-in-one productivity app.
+          </h3>
+          <button class="bg-font-main-color text-white rounded-2xl px-10 py-4 w-[fit-content] self-center mt-8">
+            Start Free Trial
+          </button>
+        </div>
+      </section>
     </section>
 
-    <section class="dev2">
-      <!-- dev 2 start here -->
+    <section class="dev2 py-16">
+      <div class="max-w-[1440px] max-h-[968] mx-[120px] px-[4] py-[120px]">
+        <div class="grid gap-6 md:grid-cols-3">
+          <!-- Card 1 -->
+          <article class="rounded-3xl border border-dashed bg-[#D7E5F6] p-8 shadow-sm backdrop-blur">
+            <div class="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-[#ecebff] text-[#4a46ff]">
+              <!-- rocket icon -->
+              <span class="text-[32px]"><img src="Vector (2).png" alt=""></span>
+            </div>
+            <h3 class="mb-3 max-w-[331px] max-h-[32px] text-[24px] font-semibold text-slate-900">
+              Streamlined Workflows
+            </h3>
+            <p class="text-xs leading-relaxed text-slate-600">
+              Automate repetitive tasks and focus on high-impact work with our
+              powerful productivity features.
+            </p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="rounded-3xl border border-dashed border-[#b6c4ff] bg-[#D8E0FC] p-8 shadow-sm backdrop-blur">
+            <div class="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-[#e0e8ff] text-[#4a46ff]">
+              <!-- performance icon -->
+              <span class="text-2xl"> <img src="Vector (1).png" alt=""></span>
+            </div>
+            <h3 class="mb-3 max-w-[331px] max-h-[32px] text-[24px] font-semibold text-slate-900">
+              Blazing Fast Performance
+            </h3>
+            <p class="text-xs leading-relaxed text-slate-600">
+              Experience lightning-fast performance and instant responsiveness
+              with our cutting-edge technology.
+            </p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="rounded-3xl border border-dashed border-[#e0b8ff] bg-[#E8DCF6] p-8 shadow-sm backdrop-blur">
+            <div class="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-[#f1dfff] text-[#a047ff]">
+              <!-- smile icon -->
+              <span class=></span><img src="Vector.png" alt=""></span>
+            </div>
+            <h3 class="mb-3 max-w-[331px] max-h-[32px] text-[24px] font-semibold text-slate-900">
+              Intuitive Interface
+            </h3>
+            <p class="text-xs leading-relaxed text-slate-600">
+              Our user-friendly interface makes it easy for anyone to
+              streamline their workflow.
+            </p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section class="dev3">
-      <!-- dev 3 start here -->
+    <section class="min-h-screen flex items-center justify-center flex-col">
+      <div class="dev3 flex flex-col w-[1199px] h-[666px] items-center bg-white justify-center gap-[0px] rounded-[24px]">
+                    <!-- หัวข้อ -->
+      <h2 class="font-bold text-[44px] flex justify-center pb-[45px]">Get in Touch</h2>
+                    <!-- กล่องช่องกรอกรายละเอียด -->
+      <div class="flex flex-col gap-[20px]"> 
+        <div class="label-name">
+            <p class="text-[16px] font-normal pb-[8px]">Name</p>
+            <input type="text" id="name" name="name" placeholder="Jhon Doe" class="border-[#E0E0ED] border-2 w-[589px] h-[48px] rounded-2xl pl-[10px]">
+        </div>
+        <div class="label-email">
+            <p class="text-[16px] font-normal pb-[8px]">Email</p>
+            <input type="email" id="email" name="email" placeholder="john@example.com" class="border-[#E0E0ED] border-2 w-[589px] h-[48px] rounded-2xl pl-[10px]">
+        </div>
+        <div class="label-message pb-[20px]">
+          <p class="text-[16px] font-normal pb-[8px]">Message</p>
+          <input id="Message" name="messge" placeholder="Your message..." class="border-[#E0E0ED] border-2 w-[589px] h-[102px] rounded-2xl pl-[10px] pb-[50px]">
+        </div>
+      </div>
+                <!-- ปุ่ม submit -->
+        <button
+            class="mt-[40px] bg-[#1A1A2C] w-[589px] h-[56px] rounded-2xl flex items-center justify-center text-white text-[16px] font-semibold hover:bg-[#5F5F76] active:bg-[#5F5F76]">
+                   Submit
+        </button>
+    </div>
+
+    <div class="footter flex flex-row justify-between h-[24px] w-[1199px] pt-[50px]">
+      <p class="">Acme productivity app ©2024</p>
+        <div class="nav-foot w-[313px] h-[24px] flex justify-between">
+          <p class="font-semibold">FAQ</p>
+          <p class="font-semibold">Terms</p>
+          <p class="font-semibold">AI Policy</p>
+          <p class="font-semibold">Pricing</p>
+        </div>
+    </div>
+
+
+      
     </section>
 
   </body>
